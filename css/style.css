@@ -25,12 +25,26 @@ h1 {
   color: #28283D;
 }
 
+h2 {
+  font-size: 3.2rem;
+  line-height: 3.6rem;
+}
+
+h3 {
+  color: #4D96A9;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
 p {
   color: #87879D;
   margin-bottom: 3rem;
 }
 
-/* Header styles */
+/* --------------------------
+------ Header styles --------
+----------------------------*/
 
 header {
   margin-bottom: 6rem;
@@ -99,6 +113,60 @@ button:hover {
   color: #8FE3F9;
 }
 
+/* --------------------------
+------ Section one-----------
+----------------------------*/
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 5rem;
+}
+
+img {
+  max-width: 15rem;
+  border-radius: 1rem;
+}
+
+.section-info {
+  max-width: 33rem;
+  margin: 0 auto;
+}
+
+/* --------------------------
+------ Section two-----------
+----------------------------*/
+
+.background-img {
+  background: linear-gradient(
+    rgba(77, 150, 169, .8), 
+    rgba(77, 150, 169, .8)),
+    url(../assets/mobile/image-footer.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 42.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-img h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.background-img p {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+/* -------------------------
+-------Tablet styles -------
+----------------------------*/
+
 @media screen and (min-width: 700px) {
   .header-info {
     max-width: 45rem;
@@ -118,7 +186,28 @@ button:hover {
     margin-right: 1rem;
     margin-left: 1rem;
   }
+
+  .section-info {
+    max-width: 57rem;
+  }
+
+  .section-info h2 {
+    font-size: 4rem;
+    line-height: 4.4rem;
+    max-width: 44rem;
+    margin: 0 auto;
+  }
+
+  .background-img {
+    background: linear-gradient(
+      rgba(77, 150, 169, .8), 
+      rgba(77, 150, 169, .8)),
+      url(../assets/tablet/image-footer.jpg);
 }
+
+/* -------------------------
+-------Desktop styles -------
+----------------------------*/
 
 @media screen and (min-width: 1100px) {
   .info {
@@ -149,4 +238,46 @@ button:hover {
   .desktop-img-left {
     transform: translateX(-10%);
   }
+
+  .background-img {
+    background: linear-gradient(
+      rgba(77, 150, 169, .8), 
+      rgba(77, 150, 169, .8)),
+      url(../assets/desktop/image-footer.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  img {
+    max-width: 25.5rem;
+  }
+
+  .image-gallery {
+    margin-bottom: 8.3rem;
+  }
+  
+  .section-two {
+    height: 30rem;
+  }
+  
+  .section-two .section-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 111rem;
+  }
+
+  .section-two .section-info h2,
+  .section-two .section-info p {
+    text-align: left;
+  }
+
+  .section-two .section-info p {
+    width: 35rem;
+    margin-right: 9rem;
+    align-self: flex-start;
+  }
+
+    
 }
