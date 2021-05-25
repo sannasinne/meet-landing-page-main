@@ -37,6 +37,11 @@ h3 {
   letter-spacing: .3rem;
 }
 
+h4 {
+  font-size: 1.6rem;
+  color: #87879D;
+}
+
 p {
   color: #87879D;
   margin-bottom: 3rem;
@@ -47,7 +52,7 @@ p {
 ----------------------------*/
 
 header {
-  margin-bottom: 6rem;
+  margin-bottom: 6.6rem;
 }
 
 .logo {
@@ -117,15 +122,37 @@ button:hover {
 ------ Section one-----------
 ----------------------------*/
 
+.section-one {
+  margin-bottom: 6.6rem;
+}
+
+.line {
+  border-left: 1px solid rgba(135, 135, 157, .25);
+  height: 8.4rem;
+  transform: translateX(50%);
+}
+
+.circle {
+  border: 1px solid rgba(135, 135, 157, .25);
+  border-radius: 50%;
+  height: 5.6rem;
+  width: 5.6rem;
+  margin: 0 auto;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .image-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
   margin-bottom: 5rem;
+  margin-top: 6.4rem;
 }
 
-img {
+.image-gallery img {
   max-width: 15rem;
   border-radius: 1rem;
 }
@@ -161,6 +188,15 @@ img {
 .background-img p {
   color: #fff;
   margin-bottom: 1rem;
+}
+
+.section-two .circle {
+  transform: translateY(2.8rem);
+  background-color: #fff;
+}
+
+.section-two .line {
+  transform: translateX(50%) translateY(2.8rem);
 }
 
 /* -------------------------
@@ -249,7 +285,7 @@ img {
     background-position: center;
   }
 
-  img {
+  .image-gallery img {
     max-width: 25.5rem;
   }
 
