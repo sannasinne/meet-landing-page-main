@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  background-color: #FAFAFA;
   font-size: 1.6rem;
   font-family: 'Red Hat Display', sans-serif;
   line-height: 2.6rem;
@@ -293,7 +294,7 @@ button:hover {
     margin-bottom: 8.3rem;
   }
   
-  .section-two {
+  .background-img {
     height: 30rem;
   }
   
